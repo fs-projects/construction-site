@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Merriweather;
+  box-sizing: border-box;
+}
+
+.header,
+.footer {
+  background: #a4b0e0;
+  position: sticky;
+  height: 80px;
+  padding: 10px;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 20px;
+}
+
+.navHeading {
+  font-size: 2.5rem;
+}
+
+.navMenu {
+  position: relative;
+}
+
+.navMenuName {
+  display: inline-block;
+  transition: transform 200ms ease-out;
+}
+
+.navMenuName:hover {
+  color: white;
+  cursor: pointer;
+  transform: scaleY(1.1) scaleX(1.1);
+}
+
+.navMenu ul {
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.navMenuName:hover .navMenu ul {
+  display: block;
+}
+
+.mainContainer {
+  height: 500px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.mainContent {
+  text-align: center;
+}
+
+.mainContentHeading {
+  font-weight: 400;
+}
+
+.mainContentSelectLocation {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.footerMod {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.footerContainer a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 200ms ease-out;
+}
+
+.footerContainer a:hover {
+  color: white;
+  cursor: pointer;
+  transform: scaleY(1.1) scaleX(1.1);
+}
